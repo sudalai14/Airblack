@@ -1,0 +1,110 @@
+#root {
+  background-color: #000000;
+}
+
+body {
+  background-color: #000; /* Dark black background */
+  color: #fff; /* Default text color */
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p, span {
+  color: #fff; /* Ensure all text elements are white */
+}
+
+.font-roca-one {
+  font-family: 'Rakkas', sans-serif;
+}
+
+/* Reset some default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base styles for mobile devices */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000;
+  color: #fff;
+}
+
+/* Styles for tablets and larger devices */
+@media (min-width: 600px) {
+  body {
+    font-size: 1.2rem;
+  }
+}
+
+/* Styles for desktops and larger devices */
+@media (min-width: 1024px) {
+  body {
+    font-size: 1.5rem;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column; /* Stack items vertically on smaller screens */
+  align-items: center; /* Center items horizontally */
+}
+
+@media (min-width: 600px) {
+  .container {
+    flex-direction: row; /* Stack items horizontally on larger screens */
+    justify-content: space-between; /* Space out items on larger screens */
+  }
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr; /* One column layout on smaller screens */
+  gap: 20px;
+}
+
+@media (min-width: 600px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr); /* Two column layout on larger screens */
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr); /* Three column layout on even larger screens */
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  font-size: 1rem;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+@media (min-width: 600px) {
+  body {
+    font-size: 1.2rem;
+  }
+
+  h1 {
+    font-size: 2.4rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    font-size: 1.5rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+}
